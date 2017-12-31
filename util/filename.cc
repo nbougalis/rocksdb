@@ -48,9 +48,7 @@ static size_t GetInfoLogPrefix(const std::string& path, char* dest, int len) {
         path[i] == '_'){
       dest[write_idx++] = path[i];
     } else {
-      if (i > 0) {
-        dest[write_idx++] = '_';
-      }
+      dest[write_idx++] = '_';
     }
     i++;
   }
